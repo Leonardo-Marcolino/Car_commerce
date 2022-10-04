@@ -199,25 +199,30 @@ section.veiculos-destaque .line-titulo h2{
 	font-size: 15px;
 	font-style: italic;
 }
-.vitrine-destaque a{
-	margin-left: 8px;
-	color: white;
-	font-size: 20px;
-	font-style: italic;
-	margin-top: 16px;
+.btn1{
+	text-align: center;
 	display: block;
-	width: 140px;
 	line-height: 40px;
 	background-color: #e94646;
 	text-decoration: none;
-	text-align: center;
-	border-bottom: 3px solid #B21E1E;
+	border-bottom: 5px solid #B21E1E;
+	color: white;
+	font-style: italic;
+	font-size: 16px;
+	width: 150px;
+
+}
+.vitrine-destaque a{
+	margin-left: 8px;
+	margin-top: 16px;
+	
 }
 .servicos-descricao{
-	max-width: 1400px;
+	display: flex;
+
 }
 .half1{
-	float: left;
+	
 	width: 50%;
 	padding: 90px 0;
 	text-align: center;
@@ -235,6 +240,7 @@ section.veiculos-destaque .line-titulo h2{
 
 }
 .half1-wrapper ul{
+	display: inline-block;
 	margin-top: 20px ;
 }
 .half1-wrapper ul > li{
@@ -244,12 +250,77 @@ section.veiculos-destaque .line-titulo h2{
 }
 
 .half1-wrapper a{
+	display: inline-block;
+	margin-left: 40px;
+	vertical-align: bottom;
 	font-weight: normal;
 	font-style: italic;
 	font-size: 24px;
 }
+.half2{
+	width: 50%;
+	padding: 90px 100px;
+	background-color: #f34b4b;
+	color: white;
+}
+.half2 h2{
+	font-style: italic;
+	font-weight: normal;
+	font-size: 32px;
+}
+.half2 .depoimento-single{
 
+	margin-top: 15px;
+}
+.half2 .depoimento-single p{
+	font-size:  20px;
+}
+.navigation{
+	float: left;
+	width: 100%;
+	max-width: 700px;
+	margin-top: 30px;
+}
+.arrow{
+	float: left;
+}
+.navigation img{
+
+	cursor: pointer;
+	margin: 0 20px;
+}
+
+.nome-depoimento{
+	float: right;
+	color: #252525;
+	font-size: 23px;
+}
+
+@media screen and (max-width:850px) {
+	
+	.half1-wrapper a{
+		display: block;
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	
+}
 @media screen and (max-width: 768px){
+
+	section.servicos-descricao{
+		flex-direction: column;
+	}
+	.half1{
+		text-align: center;
+	}
+	.half1-wrapper{
+		
+		padding-right: 0 ;
+	}
+	.half1,.half2{
+		padding: 80px 4%;
+		width: 100%;
+	}
 	section.banner{
 		background-size: cover;
 		background-position: 100px center;
